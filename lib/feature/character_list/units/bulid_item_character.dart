@@ -1,9 +1,9 @@
+import '../../../cort/model/characters_model.dart';
+
 import '../cubit/chartcter_cubit.dart';
 import '../../../constant/colors.dart';
 import '../../../cort/router/router.dart';
-import '../../../data/model/characters_model.dart';
 import '../../character_details/view.dart';
-import 'bulid_loaded_widget.dart';
 import 'package:flutter/material.dart';
 
 class BulidItemCharacterWidget extends StatelessWidget {

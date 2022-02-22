@@ -1,10 +1,10 @@
-import '../../constant/string.dart';
+import '../../../../constant/string.dart';
 import 'package:dio/dio.dart';
 
-class QutoeswebServices {
+class CharacterswebServices {
   late Dio dio;
 
-  QutoeswebServices() {
+  CharacterswebServices() {
     BaseOptions options = BaseOptions(
       baseUrl: baseUrl,
       receiveDataWhenStatusError: true,
@@ -14,10 +14,9 @@ class QutoeswebServices {
     dio = Dio(options);
   }
 
-  Future<List<dynamic>> getQuoteCharacter(String characterName) async {
+  Future<List<dynamic>> getAllCgaracter() async {
     try {
-      final response =
-          await dio.get('quote', queryParameters: {'author': characterName});
+      final response = await dio.get('characters');
       print(response.data.toString());
       return response.data as List;
     } on DioError catch (e) {

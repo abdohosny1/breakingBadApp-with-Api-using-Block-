@@ -3,7 +3,6 @@ import 'dart:math';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import '../../../constant/colors.dart';
 import '../cubit/character_details_cubit.dart';
-import '../../../widget/bulid_divder.dart';
 import '../../../widget/character_info.dart';
 import '../../../widget/show_progress.dart';
 import 'package:flutter/material.dart';

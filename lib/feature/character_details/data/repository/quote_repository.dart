@@ -1,6 +1,5 @@
-import 'package:breakingbad_api_with_block/data/web_servic/quotoes_wab_service.dart';
-
-import '../model/quotes.dart';
+import '../../../../cort/model/quotes.dart';
+import '../web_service/quotes_wb_service.dart';
 
 class QuotoRepository {
   final QutoeswebServices qutoeswebServices;

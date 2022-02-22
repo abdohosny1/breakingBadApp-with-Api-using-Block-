@@ -1,6 +1,6 @@
-import 'package:breakingbad_api_with_block/constant/colors.dart';
-import 'package:breakingbad_api_with_block/cort/router/router.dart';
-import 'package:breakingbad_api_with_block/feature/character_list/cubit/chartcter_cubit.dart';
+import '../../../constant/colors.dart';
+import '../../../cort/router/router.dart';
+import '../cubit/chartcter_cubit.dart';
 import 'package:flutter/material.dart';
 
 class BulidAppBarListIsNotSearch extends StatelessWidget {

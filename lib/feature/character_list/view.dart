@@ -1,7 +1,7 @@
+import 'data/repository/character_repostery.dart';
+import 'data/web_service/characrer_web_servic.dart';
 import 'cubit/chartcter_cubit.dart';
 import '../../constant/colors.dart';
-import '../../data/repostery/character_repostery.dart';
-import '../../data/web_servic/characrer_web_servic.dart';
 import '../../widget/bulid_app_bar.dart';
 import 'units/bulid_block_widget.dart';
 import '../../widget/bulid_text_filed.dart';

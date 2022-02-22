@@ -1,10 +1,8 @@
-import 'package:breakingbad_api_with_block/cort/router/router.dart';
+import '../../../cort/model/characters_model.dart';
+import '../data/repository/character_repostery.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import '../../../constant/colors.dart';
-import '../../../data/model/characters_model.dart';
-import '../../../data/repostery/character_repostery.dart';
 
 part 'chartcter_state.dart';
 
@@ -46,7 +44,7 @@ class ChartcterCubit extends Cubit<ChartcterState> {
     return IconButton(
         onPressed: () {
           clearControler();
-         getAllCharacter();
+          getAllCharacter();
           //emit(ChartcterLoaded(allCharacters));
           Navigator.of(context).pop();
         },

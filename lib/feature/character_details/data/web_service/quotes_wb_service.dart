@@ -1,10 +1,11 @@
-import '../../constant/string.dart';
+import '../../../../constant/string.dart';
+
 import 'package:dio/dio.dart';
 
-class CharacterswebServices {
+class QutoeswebServices {
   late Dio dio;
 
-  CharacterswebServices() {
+  QutoeswebServices() {
     BaseOptions options = BaseOptions(
       baseUrl: baseUrl,
       receiveDataWhenStatusError: true,
@@ -12,20 +13,6 @@ class CharacterswebServices {
       receiveTimeout: 20 * 1000,
     );
     dio = Dio(options);
-  }
-
-  Future<List<dynamic>> getAllCgaracter() async {
-    try {
-      final response = await dio.get('characters');
-      print(response.data.toString());
-      return response.data as List;
-    } on DioError catch (e) {
-      print(e.message);
-      return [];
-    } catch (e) {
-      print(e.toString());
-      return [];
-    }
   }
 
   Future<List<dynamic>> getQuoteCharacter(String characterName) async {

@@ -1,14 +1,12 @@
-import 'package:breakingbad_api_with_block/data/web_servic/quotoes_wab_service.dart';
-
+import '../../cort/model/characters_model.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../constant/colors.dart';
-import '../../data/repostery/quote_repository.dart';
+import 'data/repository/quote_repository.dart';
+import 'data/web_service/quotes_wb_service.dart';
 import 'cubit/character_details_cubit.dart';
 import 'units/bulid_sliver_app_bar.dart';
 import 'units/bulid_sliver_list.dart';
-import 'package:flutter/material.dart';
-
-import '../../data/model/characters_model.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CharacterDetailsView extends StatelessWidget {
   Character character;
