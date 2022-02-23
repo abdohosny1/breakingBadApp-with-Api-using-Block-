@@ -1,11 +1,11 @@
+import 'package:breakingbad_api_with_block/feature/splash/splash.dart';
 import 'package:flutter/material.dart';
-
 import 'cort/router/router.dart';
-import 'feature/character_list/view.dart';
 
 void main() {
   runApp(const MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       navigatorKey: navigatorKey,
       onGenerateRoute: onGenerateRoute,
-      home: const CharacterView(),
+      home: const SplashScreen(),
     );
   }
 }
